@@ -3,7 +3,7 @@
     background-position: top;
     background-size: cover;
     height: 95vh;
-    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     position: relative;
   
     &__logo{
@@ -22,8 +22,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      -webkit-backface-visibility: hidden; /* Safari */
-      backface-visibility: hidden;
+
     }  
   }
   

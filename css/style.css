@@ -1,7 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden; }
 
 html {
   font-size: 62.5%; }
@@ -11,8 +14,17 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 35rem 0;
-  margin-top: -30vh; }
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
+  background-size: cover;
+  transform: skewY(-6deg);
+  margin-top: -10rem; }
+  .section-features > * {
+    transform: skewY(6deg); }
 
 @keyframes moveInLeft {
   0% {
@@ -108,7 +120,7 @@ body {
   background-position: top;
   background-size: cover;
   height: 95vh;
-  clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   position: relative; }
   .header__logo {
     height: 3.5rem; }
@@ -121,10 +133,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
-    backface-visibility: hidden; }
+    text-align: center; }
 
 .btn:link, .btn:visited {
   font-size: 1.6rem;
@@ -216,6 +225,24 @@ body {
       z-index: 11; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all .2s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
 
 .row {
   max-width: 114rem;
