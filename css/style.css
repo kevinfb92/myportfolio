@@ -394,15 +394,16 @@ body {
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__link:link, .footer__link:visited {
+    transform: translateZ(0);
     text-decoration: none;
     color: #f7f7f7;
     text-transform: uppercase;
-    transition: all .2s; }
-  .footer__link:hover {
+    transition: all .2s;
+    display: inline-block; }
+  .footer__link:hover, .footer__link:active {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(2);
-    transform: scale(2); }
+    transform: scale(1.2); }
   .footer__copyright {
     border-top: 1px solid rgba(238, 238, 238, 0.9);
     display: inline-block;

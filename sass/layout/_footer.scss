@@ -32,22 +32,27 @@
         &:not(:last-child){
             margin-right: 1.5rem;
         }
+
     }
 
     &__link{
         &:link,
-        &:visited{
+        &:visited{                
+            transform: translateZ(0);
             text-decoration: none;
             color: $color-gray-light-1;
             text-transform: uppercase;
             transition: all .2s;
+            display: inline-block; 
         }
 
-        &:hover{
+        &:hover,
+        &:active{
             color: $color-primary;
             box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
-            -webkit-transform: scale(2);
-            transform: scale(2);
+            transform: scale(1.2);
+    
+
         }
     }
 
