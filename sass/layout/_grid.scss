@@ -1,4 +1,5 @@
 .row{
+  width: 95vw;
   max-width: $grid-width;
   margin: 0 auto;
   &:not(:last-child){
