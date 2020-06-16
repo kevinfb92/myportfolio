@@ -5,6 +5,15 @@
   &:not(:last-child){
     margin-bottom: $gutter-vertical;
   }
+  @include respond(tab-port){
+    margin-bottom: $gutter-vertical-small;
+  }
+  @include respond(tab-port){
+    max-width: 50rem;
+  }
+  @include respond(phone){
+    max-width: 45rem;
+  }  
 
   @include clearfix;
 
@@ -13,6 +22,7 @@
     &:not(:last-child){
       margin-right: $gutter-horizontal;
     }
+    width: 100% !important;
   }
 
 

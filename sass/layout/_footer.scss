@@ -2,6 +2,8 @@
     padding: 10rem 0;
     background-color: $color-gray-darkest;
     font-size: 1.4rem;
+    @include respond(tab-port){
+    }
 
     &__logo-box{
         text-align: center;
@@ -19,6 +21,13 @@
         display: inline-block;
         padding: 2rem 0;
         margin-left: 11rem;
+
+        
+        @include respond(tab-port){
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+        }
         
     }
 
@@ -51,8 +60,6 @@
             color: $color-primary;
             box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
             transform: scale(1.2);
-    
-
         }
     }
 
@@ -62,6 +69,10 @@
         padding-top: 2rem;
         color: $color-gray-light-1;
         float: right;
+
+        @include respond(tab-port){
+            float: none;
+        }
     }
 }
 
